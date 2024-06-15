@@ -277,6 +277,7 @@
       "remove_title": "Hapus {{ title }}",
       "note": "Instruksi khusus pesanan",
       "checkout": "Check out",
+      "empty_cart": "Keranjang kosong",
       "empty": "Keranjang Anda kosong",
       "cart_error": "Terjadi kesalahan saat memperbarui keranjang. Silakan coba lagi.",
       "cart_quantity_error_html": "Hanya dapat menambahkan {{ quantity }} item ini ke keranjang Anda.",

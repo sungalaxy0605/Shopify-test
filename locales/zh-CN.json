@@ -277,6 +277,7 @@
       "remove_title": "删除 {{ title }}",
       "note": "订单特殊说明",
       "checkout": "结账",
+      "empty_cart": "空購物車",
       "empty": "您的购物车为空",
       "cart_error": "更新购物车时出错。请重试。",
       "cart_quantity_error_html": "您只能向购物车添加 {{ quantity }} 件此商品。",

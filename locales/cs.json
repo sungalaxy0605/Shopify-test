@@ -297,6 +297,7 @@
       "remove_title": "Odebrat: {{ title }}",
       "note": "Zvláštní pokyny k objednávce",
       "checkout": "Pokladna",
+      "empty_cart": "Prázdný",
       "empty": "Košík je prázdný",
       "cart_error": "Při aktualizaci vašeho košíku došlo k chybě. Zkuste to prosím znovu.",
       "cart_quantity_error_html": "Do košíku můžete přidat jen následující množství dané položky: {{ quantity }}.",

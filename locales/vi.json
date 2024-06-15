@@ -277,6 +277,7 @@
       "remove_title": "Xóa {{ title }}",
       "note": "Hướng dẫn đặc biệt của đơn hàng",
       "checkout": "Thanh toán",
+      "empty_cart": "Trống",
       "empty": "Giỏ hàng của bạn đang trống",
       "cart_error": "Đã xảy ra lỗi khi cập nhật giỏ hàng. Vui lòng thử lại.",
       "cart_quantity_error_html": "Bạn chỉ có thể thêm {{ quantity }} mặt hàng này vào giỏ hàng.",

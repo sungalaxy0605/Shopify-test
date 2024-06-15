@@ -277,6 +277,7 @@
       "remove_title": "Ta bort {{ title }}",
       "note": "Beställ särskilda instruktioner",
       "checkout": "Gå till kassan",
+      "empty_cart": "Tömma",
       "empty": "Din varukorg är tom",
       "cart_error": "Ett fel uppstod när du uppdaterade din varukorg. Försök igen.",
       "cart_quantity_error_html": "Du kan endast lägga till {{ quantity }} av denna artikel i din varukorg.",

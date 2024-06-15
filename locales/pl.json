@@ -297,6 +297,7 @@
       "remove_title": "Usuń {{ title }}",
       "note": "Specjalne instrukcje do zamówienia",
       "checkout": "Realizuj zakup",
+      "empty_cart": "Pusty",
       "empty": "Twój koszyk jest pusty",
       "cart_error": "Wystąpił błąd podczas aktualizowania Twojego koszyka. Spróbuj ponownie.",
       "cart_quantity_error_html": "Możesz dodać do koszyka tylko {{ quantity }} sztuk(i) tej pozycji.",

@@ -277,6 +277,7 @@
       "remove_title": "{{ title }} kanalını kaldır",
       "note": "Siparişe özel talimatlar",
       "checkout": "Ödeme",
+      "empty_cart": "Boş",
       "empty": "Sepetiniz boş",
       "cart_error": "Sepetiniz güncellenirken bir hata oluştu. Lütfen tekrar deneyin.",
       "cart_quantity_error_html": "Sepetinize bu üründen yalnızca {{ quantity }} adet ekleyebilirsiniz.",

@@ -77,6 +77,12 @@
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
+                <cart-empty-button 
+                  id="empty-cart"
+                  class="cart__empty-button button"
+                  type="button">
+                  {{ 'sections.cart.empty_cart' | t }}
+                </cart-empty-button>
                 <button
                   type="submit"
                   id="checkout"

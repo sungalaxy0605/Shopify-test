@@ -277,6 +277,7 @@
       "remove_title": "Fjern {{ title }}",
       "note": "Spesielle instruksjoner for bestillingen",
       "checkout": "Kasse",
+      "empty_cart": "Tom",
       "empty": "Handlekurven din er tom",
       "cart_error": "Det oppstod en feil under oppdateringen av handlekurven din. Prøv på nytt.",
       "cart_quantity_error_html": "Du kan bare legge {{ quantity }} av denne varen i handlekurven.",

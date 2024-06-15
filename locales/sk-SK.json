@@ -297,6 +297,7 @@
       "remove_title": "Odstrániť {{ title }}",
       "note": "Špeciálne pokyny k objednávke",
       "checkout": "Platba",
+      "empty_cart": "Prázdný",
       "empty": "Váš košík je prázdny",
       "cart_error": "Pri aktualizácii košíka sa vyskytla chyba. Skúste to znova.",
       "cart_quantity_error_html": "Do košíka môžete túto položku pridať len v počte {{ quantity }}.",

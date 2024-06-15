@@ -287,6 +287,7 @@
       "remove_title": "Supprimer {{ title }}",
       "note": "Instructions spéciales concernant la commande",
       "checkout": "Procéder au paiement",
+      "empty_cart": "Panier vide",
       "empty": "Votre panier est vide",
       "cart_error": "Une erreur est survenue lors de l’actualisation de votre panier. Veuillez réessayer.",
       "cart_quantity_error_html": "Vous ne pouvez pas ajouter plus de {{ quantity }} de ce produit à votre panier.",

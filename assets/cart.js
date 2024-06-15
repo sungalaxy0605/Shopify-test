@@ -12,6 +12,39 @@ class CartRemoveButton extends HTMLElement {
 
 customElements.define('cart-remove-button', CartRemoveButton);
 
+class CartEmptyButton extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener('click', this.emptyCart);
+  }
+
+  emptyCart() {
+    if (confirm('Are you sure you want to empty the cart?')) {
+      fetch('/cart/clear.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then(data => {
+        console.log('Cart emptied:', data);
+        location.reload(); // Reload the page to reflect the empty cart
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+    }
+  }
+}
+
+customElements.define('cart-empty-button', CartEmptyButton);
+
 class CartItems extends HTMLElement {
   constructor() {
     super();

@@ -297,6 +297,7 @@
       "remove_title": "Pašalinti {{ title }}",
       "note": "Specialūs nurodymai dėl užsakymo",
       "checkout": "Atsiskaityti",
+      "empty_cart": "Tuščia",
       "empty": "Jūsų krepšelis tuščias",
       "cart_error": "Atnaujinant krepšelį įvyko klaida. Bandykite dar kartą.",
       "cart_quantity_error_html": "Į krepšelį galite įdėti tik {{ quantity }}šios prekės vnt.",
