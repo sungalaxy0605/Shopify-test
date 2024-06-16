@@ -9,6 +9,10 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'show-more-info.css' | asset_url | stylesheet_tag }}
+  <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
@@ -34,6 +38,7 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'show-more-info.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -188,6 +193,17 @@
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
+                  </div>
+                {%- endif -%}
+              {%- when 'richtext' -%}
+                {%- if block.settings.extra_info -%}
+                  <div class="product__extra_info">
+                    <div class="extra_info_container gradient">
+                      {{ block.settings.extra_info }}
+                      <show-more-info-button>
+                          <button class="show-btn fa fa-chevron-down"></button>
+                      </show-more-info-button>
+                    </div>
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
@@ -790,6 +806,18 @@
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1
+    },
+    {
+      "type": "richtext",
+      "name": "Product Extra Info",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "extra_info",
+          "default": "<p>Your Product Extra Info goes here.</p>",
+          "label": "t:sections.main-product.blocks.text.settings.text.label"
+        }
+      ]
     },
     {
       "type": "price",
